@@ -1,0 +1,17 @@
+group 'do.asm.stuff'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile("org.ow2.asm:asm:5.0.3")
+    compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.4.0'
+
+    testCompile("junit:junit:4.12")
+}
